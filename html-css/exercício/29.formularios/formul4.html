@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exempplo de formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        fieldset{
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de formulários</h1>
+     <form action="cadastro.php" method="post" autocomplete="on"> <!-- autocomplete (serve para autocompletar com algum dado pre digitado) -->
+        <fieldset> <!-- fieldset (serve para agrupar os campos )-->
+            <legend>Dados pessoais</legend> <!-- legend (serve para dar nome ao agrupamento)-->
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required>
+            </p>
+            <p>
+                <label for="imail">E-mail: </label>
+                <input type="email" name="email" id="imail" autocomplete="email" required placeholder="Ex: exemplo@gmail.com">
+            </p>
+            <p>
+                <label for="ifone">Telefone: </label>
+                 <input type="tel" name="fone" id="ifone" autocomplete="tel" required placeholder="Ex:(61) 98888-8888" pattern="^\(\d{2}\)\d{4,5}-\d{4}&"> <!--pattern (serve pra especificar um padrão no campo) -->
+            </p>
+            
+        </fieldset>
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar" ></p>
+    </form>
+    
+</body>
+</html>
