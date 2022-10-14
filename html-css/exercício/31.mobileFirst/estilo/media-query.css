@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* Todas as mídias */
+
+/*  
+    Typical devices breakpoints
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: Acima de 1200px
+ */
+
+@media print {
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+    main {
+    border: 2px solid black;
+    
+    
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#desktop{display: none;}
+    img#tv{display: none;}
+    main::after{
+        content: 'Impressora';
+        color: black;
+        text-align: center;
+        display: block;
+        text-shadow: none;
+        
+    }
+    }
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#desktop{display: none;}
+    img#tv{display: none;}
+
+    main::after{
+        content: 'Tablet';
+        color: white;
+        text-align: center;
+        display: block;
+        text-shadow: 2px 2px 6px black;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#desktop{display: block;}
+    img#tv{display: none;}
+
+    main::after{
+        content: 'Desktop';
+        color: white;
+        text-align: center;
+        display: block;
+        text-shadow: 2px 2px 6px black;
+    }
+}
+
+@media screen and (min-width: 1200px){ /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#desktop{display: none;}
+    img#tv{display: block;}
+
+    main::after{
+        content: 'Tv';
+        color: white;
+        text-align: center;
+        display: block;
+        text-shadow: 2px 2px 6px black;
+    }
+}
