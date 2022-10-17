@@ -1,0 +1,83 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(191, 191, 241);
+}
+
+header {
+    background-color: rgb(46, 46, 126);
+}
+
+header > h1 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+     list-style-type: none;  /* serve para tirar a bolinha da lista */
+}
+
+li > a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background-color: rgb(39, 93, 140);
+    color: white;
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+li > a:hover {
+    background-color: rgb(108, 118, 222);
+    color: black;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 20px;
+}
+
+
+#burguericon {
+    background-color: rgb(39, 93, 140) ;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  font-variation-settings:  /* variações do ícone puxado do site do google */
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#burguericon:hover {
+    background-color: rgb(108, 118, 222);
+    color: black;
+}
+

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 768px)  {
+    #burguericon {display: none;}
+    #itens {display: block;}
+
+    li > a {
+        border-top: none;
+        text-align: left;
+        display: inline-block;
+        border-radius: 3px;   
+    }
+
+    ul > li {
+        display: inline-block;       
+    }
+
+    ul {
+        margin-left: 5px;
+    }
+
+    main {
+        max-width: 600px;
+    }   
+}
