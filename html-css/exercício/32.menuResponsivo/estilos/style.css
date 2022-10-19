@@ -28,6 +28,7 @@ menu > ul {
 }
 
 li > a {
+    
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -35,6 +36,7 @@ li > a {
     color: white;
     text-align: center;
     border-top: 2px solid gray;
+
 }
 
 li > a:hover {
