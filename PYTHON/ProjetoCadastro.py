@@ -1,0 +1,1 @@
+print(f'{"PARABÉNS! Alternativa correta.":^60}')
